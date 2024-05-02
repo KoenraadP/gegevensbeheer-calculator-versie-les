@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekenmachine</title>
+</head>
+<body>
+
+    <!-- titeltje -->
+    <h2>Rekenmachine</h2>
+
+    <!-- tabel starten met table -->
+    <table>
+        <!-- tabel rij met tr (table row) -->
+        <tr>
+            <!-- tabel data met td (cel) -->
+            <td>Getal 1</td>
+            <td><input type="number" name="number1" id="number1"></td>
+        </tr>
+        <tr>
+            <td>Getal 2</td>
+            <td><input type="number" name="number2" id="number2"></td>
+        </tr>
+        <tr>
+            <!-- colspan om de cel twee kolommen breed te maken -->
+            <!-- id is een soort naam die we zullen gebruiken in het script -->
+            <td colspan="2">
+                <button id="add-button">+</button>
+                <button id="subtract-button">-</button>
+                <button id="multiply-button">x</button>
+                <button id="divide-button">:</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Resultaat</td>
+            <td><input readonly type="number" name="result" id="result"></td>
+        </tr>
+    </table>
+
+    <script src="scripts/rekenmachine.js"></script>
+
+</body>
+</html>
